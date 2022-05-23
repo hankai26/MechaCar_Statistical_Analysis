@@ -36,4 +36,17 @@ The p-values of Lot3 is **bold 0.04168**, which is smaller than our assumed sign
 ![t-test2](https://github.com/hankai26/MechaCar_Statistical_Analysis/blob/main/Image/t-test_2.png)
 
 
-4. Design a Study Comparing the MechaCar to the Competition
+## Study Design: MechaCar vs Competition
+To compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers, we design a statistical study that can quantify how the MechaCar performs against the competition. The research consists of several aspects as followings.
+- Test metrics
+The test metrics include but not limit to sale price, city mpg, highway mpg, annual maintain cost, horse power and safety rating.
+
+- Hypotheses
+Null hypothesis H0: MechaCar vehicles don't show outstanding performance against other vehicles.
+Alternative hypothesis Ha: MechaCar vehicles show outstanding performance over other vehicles.
+
+- Test selection
+To compare the performance of MechaCar against other manufactures, the two-sample t-test could be used to analyze the MecharCar over other vehicles. Meanwhile, a multiple linear regression analysis could be also conducted to look into each independent variable to determine if there is a significant relationship with the dependent variable.
+
+- Data
+The data in past years or fixed period following the test metrics as above needs to be collected. Any data we would like to analyze in the study as a column is necessary. 
