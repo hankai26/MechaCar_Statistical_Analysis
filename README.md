@@ -20,9 +20,14 @@ The design specifications for the MechaCar suspension coils dictate that the var
 While, further examination on the data in each lot individually shows a high variance in Lot3 as in the lot_summary table. This indicates that Lot3 would likely fail to meet the design criteria, even through Lot1 and Lot2 does qualify.
 ![lot_sum](https://github.com/hankai26/MechaCar_Statistical_Analysis/blob/main/Image/lot_sum.png)
 
-3. T-Test on Suspension Coils
-
+## T-Tests on Suspension Coils
 Using your knowledge of R, perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+![t-test1]()
+
+using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+![t-test1]()
 
 
 4. Design a Study Comparing the MechaCar to the Competition

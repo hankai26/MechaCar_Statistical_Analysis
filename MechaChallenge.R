@@ -14,3 +14,15 @@ sus_Coils_data <- read.csv('Suspension_Coil.csv')
 total_summary <- sus_Coils_data %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep')
 lot_summary <- sus_Coils_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep')
 
+## T-Tests on Suspension Coils ##
+# determine if the PSI across all manufacturing lots is different from the population mean
+t.test(sus_Coils_data$PSI, mu=mean(sus_Coils_data$PSI)) #compare sample versus population means
+# determine if the PSI for each manufacturing lot is ifferent from the population mean
+lot1_data <- subset(sus_Coils_data, Manufacturing_Lot == "Lot1")
+lot2_data <- subset(sus_Coils_data, Manufacturing_Lot == "Lot2")
+lot3_data <- subset(sus_Coils_data, Manufacturing_Lot == "Lot3")
+t.test(lot1_data$PSI, mu=mean(sus_Coils_data$PSI))
+t.test(lot2_data$PSI, mu=mean(sus_Coils_data$PSI))
+t.test(lot3_data$PSI, mu=mean(sus_Coils_data$PSI))
+
+
